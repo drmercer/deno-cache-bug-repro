@@ -1,5 +1,7 @@
 # Deno cache failure for deps shared between stable and unstable scripts.
 
+**Bug in Deno issue tracker [here](https://github.com/denoland/deno/issues/11088)**
+
 When you have two scripts, one that needs the `--unstable` flag, one that
 doesn't, and a common dependency between them, Deno's cache gets in a funky
 state where it has to typecheck one of the scripts every time you run it.
